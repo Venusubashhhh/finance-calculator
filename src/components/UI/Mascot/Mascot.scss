@@ -1,0 +1,90 @@
+.mascot-wrapper {
+  height: 150px;
+  position: fixed;
+  z-index: 99999;
+  bottom: 20px;
+  right: 0px;
+}
+
+
+@font-face {
+  font-family: TextFont;
+  /* Define the font-family name */
+  src: url('../../../assets/UcCo3FwrK3iLTcviYwY.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bubble {
+  position: fixed;
+  bottom: 10px;
+  right: 65px;
+  font-family: TextFont;
+  font-size: 11px;
+  line-height: 24px;
+  width: 200px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  animation: fadeInBubble ease 3s;
+  z-index: 999;
+
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 208px;
+  bottom: 94px;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  rotate: 270deg;
+  z-index: -9;
+}
+
+.fade-in {
+  animation: fadeInBubble ease 3s;
+}
+
+
+@keyframes fadeInBubble {
+  from {
+    opacity: 0;
+    /* Start with opacity 0 */
+    transform: translateY(10px);
+    /* Optional: Initial position */
+  }
+
+  to {
+    opacity: 1;
+    /* Fade in to opacity 1 */
+    transform: translateY(0);
+    /* Optional: Final position */
+  }
+}
+
+@media screen and (max-width: 610px) {
+
+  .mascot-wrapper {
+
+    right: -10px;
+  }
+
+  /* Additional styles for cards in smaller layout if needed */
+}

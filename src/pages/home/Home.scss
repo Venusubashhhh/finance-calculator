@@ -1,0 +1,206 @@
+.parentFlex {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-left: -15px;
+}
+
+
+.card {
+  flex: 1 0 calc(20% - 14px);
+  /* For 3 columns with gap */
+  //max-width: calc(20% - 10px); /* For 3 columns with gap */
+  height: 167.7px;
+  width: 87.5px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.single {
+  flex-basis: calc(100% - 10px);
+  /* For single column with gap */
+  height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+}
+
+
+.card-wrapper {
+  display: flex;
+  margin-left: 30px;
+}
+
+.history {
+
+  height: 375px;
+  width: 290px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-left: 14px;
+  position: relative;
+}
+
+@font-face {
+  font-family: TitleFont;
+  /* Define the font-family name */
+  src: url('/assets/bold.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TextFont;
+  /* Define the font-family name */
+  src: url('../../../assets/UcCo3FwrK3iLTcviYwY.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-text {
+  font-family: TitleFont;
+  text-align: center;
+  padding-top: 58px;
+}
+
+.rule-number {
+  margin-top: 7%;
+  margin-left: 5%;
+  position: absolute;
+  font-family: TextFont;
+}
+
+.icon-spacing {
+  width: 75%;
+}
+
+.last-rule-number {
+  display: flex;
+}
+
+.last-card-text {
+  font-family: TitleFont;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.last-icon-spacing {
+  width: 92%;
+}
+
+.single {
+
+  padding-top: 1.5%;
+}
+
+.last-rule-number {
+  margin-left: 1.5%;
+}
+
+.rule-text {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: TextFont;
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.history-header {
+  font-family: Titlefont;
+  text-align: center;
+}
+
+.history-list {
+  background: rgba(255, 255, 255, 0.73);
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  margin: 13px;
+  padding: 5px;
+  font-family: TextFont;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.history-list span {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.history-operation-text {
+  width: 60%;
+  font-family: TextFont;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .parentFlex {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+
+  .card {
+    flex: 1 0 calc(40% - 10px);
+  }
+
+  /* Additional styles for cards in smaller layout if needed */
+}
+
+@media screen and (max-width: 610px) {
+  .card-wrapper {
+    display: block;
+
+  }
+
+  .history {
+    margin-top: 16px;
+    margin-left: 18%;
+  }
+
+  .mascot-wrapper {
+    position: fixed;
+    right: -500px;
+  }
+
+  /* Additional styles for cards in smaller layout if needed */
+}
+
+.react-calendar {
+  border: none !important;
+  /* or outline: 0; */
+  background: rgba(255, 255, 255, 0.15) !important;
+
+
+}
+
+.react-calendar__tile--active{
+  background: rgb(70, 143, 66) !important;
+}

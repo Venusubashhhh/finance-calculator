@@ -1,0 +1,90 @@
+.history-card {
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+    height: 130px;
+    width: 70vw;
+    border-radius: 15px;
+    position: relative;
+    margin: 15px auto;
+    text-align: center;
+}
+
+@font-face {
+    font-family: TextFont;
+    /* Define the font-family name */
+    src: url('../../../assets/bold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: TitleFont;
+    /* Define the font-family name */
+    src: url('../../../assets/UcCo3FwrK3iLTcviYwY.woff2');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.history-rule-text {
+    font-family: TitleFont;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.history-input-text {
+    font-family: TextFont;
+    bottom: 20px;
+    position: absolute;
+    left: 16px;
+
+}
+
+.history-input-text span {
+    right: 10px;
+
+}
+
+.result-div {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 20%;
+    padding: 10px;
+    font-family: TitleFont;
+}
+
+.result-text {
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 20px;
+}
+
+.result-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: TextFont;
+
+}
+
+.Title {
+    font-family: TitleFont;
+    font-size: 40px;
+    text-align: center;
+    position: static;
+    width: 100vw;
+}
+
+
+.d-button {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+}
